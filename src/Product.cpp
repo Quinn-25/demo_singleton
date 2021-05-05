@@ -46,5 +46,5 @@ void Product::setType(const string &type)
 
 void Product::show() const
 {
-    cout << " | Type: " << type << "| Name: " << name << " | Price: $" << price << endl;
+    cout << " Type: " << type << " | Name: " << name << " | Price: $" << price << endl;
 }

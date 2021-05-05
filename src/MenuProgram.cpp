@@ -4,10 +4,12 @@ void MenuProgram::run()
 {
    bool running = true;
    int choice;
+   string option;
     while(running) {
-        printMenu();
+        option = getString();
+        printMenu(option);
         choice = getChoice();
-        doTask(choice);
+        doTask(option, choice);
         if (choice == EXIT) running = false;
     }
 }

@@ -67,7 +67,7 @@ void BrandRecognition::show() const
     {
         for (int i = 0; i < products.size(); i++)
         {
-            cout << "   +";
+            cout << "   ->";
             products[i].show();
         }
     }

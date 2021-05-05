@@ -1,15 +1,17 @@
-#include <HaNoiBranch.h>
+#include <SouthBranch.h>
 #include <iostream>
 using namespace std;
 
-HaNoiBranch::HaNoiBranch()
+SouthBranch::SouthBranch()
 {
     brand = Brand::getBrand();
 }
 
-void HaNoiBranch::setBrandRecognition()
+void SouthBranch::setBrandRecognition()
 {
     string name, logo, trademark;
+
+    cout << "Adding product from South Branch" << endl;
     cout << "Enter brand name: ";
     cin >> name;
     cout << "Enter logo: ";
@@ -19,9 +21,10 @@ void HaNoiBranch::setBrandRecognition()
     brand->setBrandReconition(name, logo, trademark);
 }
 
-void HaNoiBranch::addNewProduct()
+void SouthBranch::addNewProduct()
 {
     string brandName, type, name;
+    cout << "Adding product from South Branch" << endl;
     int price;
     cout << "Enter brand of the product: ";
     cin >> brandName;
@@ -35,8 +38,8 @@ void HaNoiBranch::addNewProduct()
     brand->addProduct(brandName, type, name, price);
 }
 
-void HaNoiBranch::showAllBrand() const
+void SouthBranch::showAllBrand() const
 {
-    cout << "\n-------Ha Noi Branch-------" << endl;
+    cout << "\n-------List from South Branch-------" << endl;
     brand->show();
 }

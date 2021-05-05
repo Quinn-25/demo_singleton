@@ -1,12 +1,12 @@
 #include <Brand.h>
 
-class HaNoiBranch
+class SouthBranch
 {
 private:
     Brand *brand;
 
 public:
-    HaNoiBranch();
+    SouthBranch();
     void setBrandRecognition();
     void addNewProduct();
 
